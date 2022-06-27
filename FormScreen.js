@@ -123,7 +123,7 @@ const FormScreen = () => {
                         placeholderTextColor="#C1C1C1"
                     />
 
-                    <Text style={styles.genderText}>Other</Text>
+                    <Text style={styles.genderText}>Female</Text>
 
                     <RadioButton
                         value="Female"
