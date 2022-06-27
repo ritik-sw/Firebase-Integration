@@ -28,33 +28,36 @@ const FormScreen = () => {
 
 
     const [name, setName] = React.useState('');
-    const [address, setAddress] = React.useState();
+    const [address, setAddress] = React.useState('');
     const [gender, setGender] = React.useState('');
-    const [phone, setPhone] = React.useState(null)
+    const [phone, setPhone] = React.useState('')
 
     const submitForm = () => {
 
-        if (!name.trim() || name.length < 3) {
+        if (name.length < 3) {
             alert('Please Enter atleast three character Name');
             return;
         }
-        if (!address.trim() || address.length < 10) {
-            alert('Please Enter  atleast 10 characters address');
-            return;
-        }
+   
+     
 
-        if (!phone.trim()) {
-            alert('Please Enter Contact');
-            return;
-        }
         if (phone.length < 10) {
             alert('Please Enter 10 Digit Phone No.');
             return;
         }
+        
+        if ( address.length < 10) {
+            alert('Please Enter  atleast 10 characters address');
+            return;
+        }
+               
+        if(gender.length==0){
+            alert('Please Select gender');
+            return;
+           }
 
         addItem(name,address,gender,phone);
-        Alert.alert('Item saved successfully');
-        alert(name+" "+address+" "+gender+" "+phone)
+        Alert.alert('Saved successfully');
     }
 
 
