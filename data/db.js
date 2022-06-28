@@ -1,0 +1,30 @@
+export const Data=[
+    {
+        id:1,
+        name:'Milk'
+    },
+    {
+        id:2,
+        name:'Coffee'
+    },
+    {
+        id:3,
+        name:'Tea'
+    },
+    {
+        id:4,
+        name:'Oranges'
+    },
+    {
+        id:5,
+        name:'Bread'
+    },
+    {
+        id:6,
+        name:'Brinjal'
+    },
+    {
+        id:7,
+        name:'Curd'
+    },
+]
